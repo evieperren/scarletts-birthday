@@ -1,0 +1,127 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
+  background-color: black;
+  color: white; }
+
+h1 {
+  font-size: 42px;
+  margin: 10px; }
+
+header {
+  background-color: #e7eaeb;
+  padding: 20px;
+  text-align: center;
+  color: #0d2835;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px; }
+
+.top-section {
+  text-align: center; }
+  .top-section__intro {
+    margin: 150px; }
+    .top-section__intro img {
+      width: 50px;
+      display: block;
+      margin: auto;
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse 2s infinite; }
+
+.birthday {
+  margin-top: 100px;
+  text-align: center; }
+  .birthday img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite; }
+  .birthday__button {
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background-color: black;
+    border: 1px solid white;
+    color: white; }
+    .birthday__button:hover {
+      background-color: #d4eff8;
+      border: 1px solid transparent;
+      color: black; }
+  .birthday__message--show {
+    display: block;
+    background-image: url("./imgs/balloons.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 510px;
+    margin: 50px; }
+    .birthday__message--show div {
+      margin: auto;
+      padding-top: 170px;
+      width: 35%; }
+  .birthday__message--hide {
+    display: none; }
+
+.image-gallery--circle img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%; }
+
+.image-gallery--square img {
+  width: 400px;
+  height: 600px; }
+
+.left {
+  float: left;
+  margin: 70px;
+  margin-top: 100px; }
+
+.right {
+  float: right;
+  margin: 70px;
+  margin-top: 300px; }
+
+.size--large img {
+  width: 600px;
+  height: 600px; }
+
+.size--medium img {
+  width: 400px;
+  height: 400px; }
+
+.size--small img {
+  width: 200px;
+  height: 200px;
+  margin: 200px 100px; }
+
+.move-down {
+  margin-top: 400px; }
+
+.thank-you {
+  position: absolute;
+  bottom: 0;
+  display: block; }
